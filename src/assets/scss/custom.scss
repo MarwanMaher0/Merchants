@@ -1,0 +1,30 @@
+/*
+Template Name: E-com -  Admin 
+Author: Themesdesign
+Version: 2.3.0
+Contact: themesdesign.in@gmail.com
+File: custom Css File
+*/
+
+.vue-form-wizard.md .wizard-icon-circle {
+  width: 38px !important;
+  height: 38px !important;
+  font-size: 15px !important;
+}
+
+.vue-form-wizard.md .wizard-navigation .wizard-progress-with-circle {
+  top: 24px !important;
+  height: 2px !important;
+}
+
+.vue-form-wizard.md .wizard-nav-pills > li.active > a .wizard-icon {
+  font-size: 15px !important;
+}
+
+.vue-form-wizard .wizard-icon-circle {
+  border: 2px solid #f3f2ee !important;
+}
+
+.vue-form-wizard .checked {
+  border-color: rgb(86, 100, 210) !important;
+}

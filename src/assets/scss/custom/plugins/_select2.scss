@@ -1,0 +1,102 @@
+
+//
+// Select 2
+//
+@import "@vueform/multiselect/themes/default.css";
+
+// templating-select
+
+.img-flag{
+  margin-right: 7px;
+  height: 15px;
+  width: 18px;
+}
+
+.multiselect {
+  background: $input-bg;
+  border: $input-border-width solid $input-border-color;
+  font-size: $input-font-size;
+  border-radius: $input-border-radius;
+  min-height: $input-height-inner;
+
+  &.is-active {
+      box-shadow: none;
+  }
+}
+
+.multiselect-wrapper {
+  font-size: var(--#{$prefix}font-base);
+  min-height: $input-height-inner;
+
+  .multiselect-tag {
+      background-color: var(--#{$prefix}primary);
+      color: $white;
+      border: $input-border-width solid var(--#{$prefix}primary);
+      font-size: 11px;
+      font-weight: $input-font-weight;
+      line-height: $input-line-height;
+      .multiselect-tag-remove {
+          position: relative;
+          display: inline-block;
+          margin-top: 0;
+          margin-right: -4px;
+          margin-bottom: 0;
+          margin-left: 8px;
+          padding-left: 16px;
+          border-left: 1px solid rgba(255, 255, 255, .5);
+          border-right: 0;
+          background-size: 8px;
+          width: 8px;
+          line-height: 1;
+          opacity: .75;
+          border-radius: 0;
+
+          .multiselect-tag-remove-icon {
+              position: absolute;
+              top: -1px;
+              left: 2px;
+          }
+      }
+  }
+}
+
+.multiselect-dropdown {
+  background: $input-bg;
+  border: $input-border-width solid $input-border-color;
+  border-radius: $input-border-radius;
+  //     max-height: 300px;
+  //     overflow: auto;
+
+  .multiselect-option {
+      color: var(--#{$prefix}secondary-color);
+      position: relative;
+      font-size: $dropdown-font-size;
+      padding: $dropdown-item-padding-y $dropdown-item-padding-x $dropdown-item-padding-y 16px;
+      font-size: var(--#{$prefix}font-base);
+  }
+}
+
+.multiselect-search {
+  background: $input-bg;
+  border-radius: $input-border-radius;
+}
+
+.multiselect-option {
+  &.is-pointed {
+      background: var(--#{$prefix}tertiary-bg);
+  }
+
+  &.is-selected {
+      background: var(--#{$prefix}primary);
+      color: $white;
+  }
+
+  &.is-selected.is-pointed {
+      background: var(--#{$prefix}primary);
+      color: $white;
+  }
+}
+
+.multiselect-tags-search {
+  background: $input-bg;
+}
